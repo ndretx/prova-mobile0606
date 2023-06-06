@@ -1,0 +1,21 @@
+O código começa importando os componentes e 
+bibliotecas necessárias do React e do React Native.
+
+A constante images é um array que contém 
+as importações das imagens usadas no aplicativo.
+
+A função App é o componente principal do aplicativo. 
+Ela utiliza o hook useState para criar o estado imageIndex, 
+que controla o índice da imagem exibida. 
+A função handleButtonPress é chamada quando o botão é pressionado e
+ atualiza o estado imageIndex para mostrar a próxima imagem.
+O retorno do componente App contém uma estrutura de visualização (View) 
+que envolve os outros componentes do aplicativo: TitleComponent, ImageComponent, ButtonComponent e StatusBar.
+O componente TitleComponent recebe a prop title
+ e exibe o texto no formato de um componente de texto (Text).
+O componente ImageComponent recebe as props imageSource (array de imagens) 
+e imageIndex (índice da imagem atual). 
+Ele utiliza o valor do índice para obter a imagem correspondente do array e exibe-a usando o componente Image.
+O componente ButtonComponent recebe a prop onPress, 
+que é uma função para lidar com o evento de pressionar o botão. 
+Ele exibe um botão (Button) que dispara a função onPress quando pressionado.
